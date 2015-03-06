@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46003C041AA988990091F135 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C031AA988990091F135 /* GoogleMobileAds.framework */; };
+		46003C061AA988D20091F135 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C051AA988D20091F135 /* AdSupport.framework */; };
+		46003C081AA988E40091F135 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C071AA988E40091F135 /* AudioToolbox.framework */; };
+		46003C0A1AA988ED0091F135 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C091AA988ED0091F135 /* AVFoundation.framework */; };
+		46003C0C1AA988F40091F135 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C0B1AA988F40091F135 /* CoreGraphics.framework */; };
+		46003C0E1AA988FB0091F135 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C0D1AA988FB0091F135 /* CoreTelephony.framework */; };
+		46003C101AA989040091F135 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C0F1AA989040091F135 /* EventKit.framework */; };
+		46003C121AA9890A0091F135 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C111AA9890A0091F135 /* EventKitUI.framework */; };
+		46003C141AA989110091F135 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C131AA989110091F135 /* MessageUI.framework */; };
+		46003C161AA989170091F135 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C151AA989170091F135 /* StoreKit.framework */; };
+		46003C181AA989200091F135 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46003C171AA989200091F135 /* SystemConfiguration.framework */; };
 		46E8A6B61A9B217A00BE219D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8A6B51A9B217A00BE219D /* AppDelegate.swift */; };
 		46E8A6B81A9B217A00BE219D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8A6B71A9B217A00BE219D /* ViewController.swift */; };
 		46E8A6BB1A9B217A00BE219D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E8A6B91A9B217A00BE219D /* Main.storyboard */; };
@@ -26,6 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46003C031AA988990091F135 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		46003C051AA988D20091F135 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		46003C071AA988E40091F135 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		46003C091AA988ED0091F135 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		46003C0B1AA988F40091F135 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		46003C0D1AA988FB0091F135 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		46003C0F1AA989040091F135 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		46003C111AA9890A0091F135 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		46003C131AA989110091F135 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		46003C151AA989170091F135 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		46003C171AA989200091F135 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		46E8A6B01A9B217A00BE219D /* taptan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taptan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E8A6B41A9B217A00BE219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E8A6B51A9B217A00BE219D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +58,7 @@
 		46E8A6C51A9B217A00BE219D /* taptanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taptanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E8A6CA1A9B217A00BE219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E8A6CB1A9B217A00BE219D /* taptanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taptanTests.swift; sourceTree = "<group>"; };
+		46FF3D1E1AA98D89001759B4 /* AdmobBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdmobBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +66,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46003C181AA989200091F135 /* SystemConfiguration.framework in Frameworks */,
+				46003C161AA989170091F135 /* StoreKit.framework in Frameworks */,
+				46003C141AA989110091F135 /* MessageUI.framework in Frameworks */,
+				46003C121AA9890A0091F135 /* EventKitUI.framework in Frameworks */,
+				46003C101AA989040091F135 /* EventKit.framework in Frameworks */,
+				46003C0E1AA988FB0091F135 /* CoreTelephony.framework in Frameworks */,
+				46003C0C1AA988F40091F135 /* CoreGraphics.framework in Frameworks */,
+				46003C0A1AA988ED0091F135 /* AVFoundation.framework in Frameworks */,
+				46003C081AA988E40091F135 /* AudioToolbox.framework in Frameworks */,
+				46003C061AA988D20091F135 /* AdSupport.framework in Frameworks */,
+				46003C041AA988990091F135 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +93,17 @@
 		46E8A6A71A9B217A00BE219D = {
 			isa = PBXGroup;
 			children = (
+				46003C171AA989200091F135 /* SystemConfiguration.framework */,
+				46003C151AA989170091F135 /* StoreKit.framework */,
+				46003C131AA989110091F135 /* MessageUI.framework */,
+				46003C111AA9890A0091F135 /* EventKitUI.framework */,
+				46003C0F1AA989040091F135 /* EventKit.framework */,
+				46003C0D1AA988FB0091F135 /* CoreTelephony.framework */,
+				46003C0B1AA988F40091F135 /* CoreGraphics.framework */,
+				46003C091AA988ED0091F135 /* AVFoundation.framework */,
+				46003C071AA988E40091F135 /* AudioToolbox.framework */,
+				46003C051AA988D20091F135 /* AdSupport.framework */,
+				46003C031AA988990091F135 /* GoogleMobileAds.framework */,
 				46E8A6B21A9B217A00BE219D /* taptan */,
 				46E8A6C81A9B217A00BE219D /* taptanTests */,
 				46E8A6B11A9B217A00BE219D /* Products */,
@@ -83,6 +128,7 @@
 				46E8A6BC1A9B217A00BE219D /* Images.xcassets */,
 				46E8A6BE1A9B217A00BE219D /* LaunchScreen.xib */,
 				46E8A6B31A9B217A00BE219D /* Supporting Files */,
+				46FF3D1E1AA98D89001759B4 /* AdmobBridge.h */,
 			);
 			path = taptan;
 			sourceTree = "<group>";
@@ -289,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,9 +382,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = taptan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AdmobBridge.h";
 			};
 			name = Debug;
 		};
@@ -346,9 +399,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = taptan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AdmobBridge.h";
 			};
 			name = Release;
 		};
@@ -405,6 +465,7 @@
 				46E8A6D11A9B217A00BE219D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46E8A6D21A9B217A00BE219D /* Build configuration list for PBXNativeTarget "taptanTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +474,7 @@
 				46E8A6D41A9B217A00BE219D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
