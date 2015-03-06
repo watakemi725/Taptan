@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -40,7 +41,7 @@
                                 <connections>
                                     <action selector="theTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="gyY-BC-RP5"/>
                                     <action selector="theTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dvR-5X-81X"/>
-                                    <action selector="theTouchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="Gs3-W3-DLx"/>
+                                    <action selector="theTouchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="C8f-ED-fXR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,6 +55,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Inish View Controller-->
+        <scene sceneID="e2A-h2-tIR">
+            <objects>
+                <viewController restorationIdentifier="finish" storyboardIdentifier="finish" id="5Eq-Yr-hwE" customClass="FInishViewController" customModule="taptan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WBt-yL-kUR"/>
+                        <viewControllerLayoutGuide type="bottom" id="dWF-56-tal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZUv-S8-6nq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jo-Pb-bv6">
+                                <rect key="frame" x="110" y="472" width="100" height="27"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="back">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="5Eq-Yr-hwE" eventType="touchUpInside" id="27d-T5-K3d"/>
+                                    <action selector="theTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="DXX-0y-4Yj"/>
+                                    <action selector="theTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uP8-id-vwQ"/>
+                                    <action selector="theTouchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="IwA-Pt-OlV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMe-si-CA7">
+                                <rect key="frame" x="110" y="421" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="tweet">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="5Eq-Yr-hwE" eventType="touchUpInside" id="Tc4-I7-rwk"/>
+                                    <action selector="theTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="DCH-NX-8GP"/>
+                                    <action selector="theTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RP5-9H-nm0"/>
+                                    <action selector="theTouchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="UlR-9V-zH1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zT-2Q-IQz">
+                                <rect key="frame" x="-68" y="212" width="456" height="143"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="67"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="7zT-2Q-IQz" id="aEt-xc-HlA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rE5-Tn-MqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="136"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YU8-yi-4r0">
@@ -72,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0To-jE-szl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="932.5" y="332.5"/>
+            <point key="canvasLocation" x="1048.5" y="185.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LaX-GT-SHr">
@@ -91,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJV-jB-TkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1541.5" y="332.5"/>
+            <point key="canvasLocation" x="1593.5" y="144.5"/>
         </scene>
     </scenes>
 </document>

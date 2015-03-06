@@ -8,27 +8,6 @@
 
 import UIKit
 
-//private func getBannerView() -> GADBannerView{
-//    // return Admob's banner view.
-//    var bannerView: GADBannerView = GADBannerView();
-//    
-//    bannerView = GADBannerView(adSize:kGADAdSizeBanner);
-//    bannerView.frame.origin = CGPointMake(0, self.view.frame.size.height-50)
-//    bannerView.frame.size = CGSizeMake(self.view.frame.size.width,50)
-//    bannerView.adUnitID = "your_admob_id"
-//    bannerView.delegate = self
-//    bannerView.rootViewController = self
-//    
-//    var request:GADRequest = GADRequest()
-//    request.testDevices = [GAD_SIMULATOR_ID]
-//    
-//    bannerView.loadRequest(request)
-//    
-//    return bannerView
-//    
-//}
-
-
 
 class ViewController: UIViewController ,GADBannerViewDelegate{
     
@@ -39,7 +18,8 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
     @IBOutlet var timerLabel : UILabel!
     @IBOutlet var btn : UIButton!
     
-    
+    var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+   
     
     
     //タイマー.
@@ -96,35 +76,22 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
     }
     @IBAction func theTouchUpInside( sender : UIButton ){
         onoff = false
+        
+         appDelegate.score = cnt //appDelegateの変数を操作
+        
+        var targetView: AnyObject = self.storyboard!.instantiateViewControllerWithIdentifier( "finish" )
+        
+        self.presentViewController( targetView as UIViewController, animated: true
+, completion: nil)
     }
     @IBAction func theTouchUpOutside( sender : UIButton ){
         onoff = false
+
+    
     }
     
     
 
-    
-    //ボタンが押された時に呼ばれるメソッド.
-    @IBAction func onMyButtonClick(){
-        
-        
-        //timerが動いてるなら.
-        if timer.valid == true {
-            
-            //timerを破棄する.
-            timer.invalidate()
-            
-            //ボタンのタイトル変更.
-        }
-        else if timer.valid == false {
-            
-            //            //timerを生成する.
-            //            timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
-            
-            //ボタンのタイトル変更.
-        }
-        
-    }
     
     
     func wasDragged (buttn : UIButton, event :UIEvent)

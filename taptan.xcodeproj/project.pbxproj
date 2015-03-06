@@ -24,6 +24,7 @@
 		46E8A6BD1A9B217A00BE219D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E8A6BC1A9B217A00BE219D /* Images.xcassets */; };
 		46E8A6C01A9B217A00BE219D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E8A6BE1A9B217A00BE219D /* LaunchScreen.xib */; };
 		46E8A6CC1A9B217A00BE219D /* taptanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8A6CB1A9B217A00BE219D /* taptanTests.swift */; };
+		46FF3D221AA99A0B001759B4 /* FInishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF3D211AA99A0B001759B4 /* FInishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		46E8A6CA1A9B217A00BE219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E8A6CB1A9B217A00BE219D /* taptanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taptanTests.swift; sourceTree = "<group>"; };
 		46FF3D1E1AA98D89001759B4 /* AdmobBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdmobBridge.h; sourceTree = "<group>"; };
+		46FF3D211AA99A0B001759B4 /* FInishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FInishViewController.swift; path = ../FInishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				46E8A6B51A9B217A00BE219D /* AppDelegate.swift */,
 				46E8A6B71A9B217A00BE219D /* ViewController.swift */,
+				46FF3D211AA99A0B001759B4 /* FInishViewController.swift */,
 				46E8A6B91A9B217A00BE219D /* Main.storyboard */,
 				46E8A6BC1A9B217A00BE219D /* Images.xcassets */,
 				46E8A6BE1A9B217A00BE219D /* LaunchScreen.xib */,
@@ -260,6 +263,7 @@
 			files = (
 				46E8A6B81A9B217A00BE219D /* ViewController.swift in Sources */,
 				46E8A6B61A9B217A00BE219D /* AppDelegate.swift in Sources */,
+				46FF3D221AA99A0B001759B4 /* FInishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
