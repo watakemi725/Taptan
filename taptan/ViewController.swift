@@ -31,9 +31,11 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
         
         
         //timerを生成する.
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.000001, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
 //        btn.addTarget(self, action: "wasDragged: event:", forControlEvents: UIControlEvents.TouchDragInside)
      
+        
+        
         //admob関係
         let bannerView:GADBannerView = getAdBannerView()
         self.view.addSubview(bannerView)
@@ -111,10 +113,10 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
     func onUpdate(timer : NSTimer){
         
         if onoff == true {
-            cnt += 0.1
+            cnt += 0.001
             
             //桁数を指定して文字列を作る.
-            let str = "Time:".stringByAppendingFormat("%.1f",cnt)
+            let str = "Time:".stringByAppendingFormat("%.2f",cnt*10)
             
             timerLabel.text = str
         }else{

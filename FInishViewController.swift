@@ -18,7 +18,7 @@ class FInishViewController : UIViewController {
         
         var appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
         var score = appDelegate.score
-        let str = "Time:".stringByAppendingFormat("%.1f",score!)
+        let str = "".stringByAppendingFormat("%.2fsec",score!)
         label.text = str
         println(str)
         
