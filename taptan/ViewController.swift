@@ -65,8 +65,7 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
         return bannerView
     }
     
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -86,6 +85,7 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
         self.presentViewController( targetView as UIViewController, animated: true
 , completion: nil)
     }
+    
     @IBAction func theTouchUpOutside( sender : UIButton ){
         onoff = false
 
@@ -113,7 +113,7 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
     func onUpdate(timer : NSTimer){
         
         if onoff == true {
-            cnt += 0.001
+            cnt += 0.00001
             
             //桁数を指定して文字列を作る.
             let str = "Time:".stringByAppendingFormat("%.2f",cnt*10)
