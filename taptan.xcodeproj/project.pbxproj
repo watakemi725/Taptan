@@ -36,6 +36,12 @@
 		46CBE01D1AB750E60093769F /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0081AB750E60093769F /* Icon-Small-50@2x.png */; };
 		46CBE01E1AB750E60093769F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0091AB750E60093769F /* Icon.png */; };
 		46CBE01F1AB750E60093769F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE00A1AB750E60093769F /* Icon@2x.png */; };
+		46CBE0241AB767D10093769F /* FOT-MatissePro-EB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0231AB767D10093769F /* FOT-MatissePro-EB.otf */; };
+		46CBE02A1AB76EF30093769F /* pushbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0251AB76EF30093769F /* pushbtn.png */; };
+		46CBE02B1AB76EF40093769F /* defbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0261AB76EF30093769F /* defbtn.png */; };
+		46CBE02C1AB76EF40093769F /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0271AB76EF30093769F /* more.png */; };
+		46CBE02D1AB76EF40093769F /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0281AB76EF30093769F /* tweet.png */; };
+		46CBE02E1AB76EF40093769F /* kekaback.png in Resources */ = {isa = PBXBuildFile; fileRef = 46CBE0291AB76EF30093769F /* kekaback.png */; };
 		46E8A6B61A9B217A00BE219D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8A6B51A9B217A00BE219D /* AppDelegate.swift */; };
 		46E8A6B81A9B217A00BE219D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8A6B71A9B217A00BE219D /* ViewController.swift */; };
 		46E8A6BB1A9B217A00BE219D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E8A6B91A9B217A00BE219D /* Main.storyboard */; };
@@ -85,6 +91,12 @@
 		46CBE0081AB750E60093769F /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		46CBE0091AB750E60093769F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		46CBE00A1AB750E60093769F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		46CBE0231AB767D10093769F /* FOT-MatissePro-EB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-MatissePro-EB.otf"; sourceTree = "<group>"; };
+		46CBE0251AB76EF30093769F /* pushbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushbtn.png; sourceTree = "<group>"; };
+		46CBE0261AB76EF30093769F /* defbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defbtn.png; sourceTree = "<group>"; };
+		46CBE0271AB76EF30093769F /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
+		46CBE0281AB76EF30093769F /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		46CBE0291AB76EF30093769F /* kekaback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kekaback.png; sourceTree = "<group>"; };
 		46E8A6B01A9B217A00BE219D /* taptan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taptan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E8A6B41A9B217A00BE219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E8A6B51A9B217A00BE219D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +176,12 @@
 		46E8A6A71A9B217A00BE219D = {
 			isa = PBXGroup;
 			children = (
+				46CBE0251AB76EF30093769F /* pushbtn.png */,
+				46CBE0261AB76EF30093769F /* defbtn.png */,
+				46CBE0271AB76EF30093769F /* more.png */,
+				46CBE0281AB76EF30093769F /* tweet.png */,
+				46CBE0291AB76EF30093769F /* kekaback.png */,
+				46CBE0231AB767D10093769F /* FOT-MatissePro-EB.otf */,
 				46CBDFF71AB750E60093769F /* iostaptan */,
 				46003C171AA989200091F135 /* SystemConfiguration.framework */,
 				46003C151AA989170091F135 /* StoreKit.framework */,
@@ -314,19 +332,25 @@
 			files = (
 				46E8A6BB1A9B217A00BE219D /* Main.storyboard in Resources */,
 				46E8A6C01A9B217A00BE219D /* LaunchScreen.xib in Resources */,
+				46CBE02A1AB76EF30093769F /* pushbtn.png in Resources */,
 				46E8A6BD1A9B217A00BE219D /* Images.xcassets in Resources */,
+				46CBE02B1AB76EF40093769F /* defbtn.png in Resources */,
 				46CBE01C1AB750E60093769F /* Icon-Small-50.png in Resources */,
 				46CBE0101AB750E60093769F /* Icon-40@2x.png in Resources */,
 				46CBE00E1AB750E60093769F /* Contents.json in Resources */,
+				46CBE02C1AB76EF40093769F /* more.png in Resources */,
 				46CBE01B1AB750E60093769F /* Icon-72@2x.png in Resources */,
 				46CBE0191AB750E60093769F /* Icon-60.png in Resources */,
 				46CBE01D1AB750E60093769F /* Icon-Small-50@2x.png in Resources */,
 				46CBE0171AB750E60093769F /* Icon-Small@2x.png in Resources */,
+				46CBE02D1AB76EF40093769F /* tweet.png in Resources */,
 				46CBE0151AB750E60093769F /* Icon-76@2x.png in Resources */,
+				46CBE02E1AB76EF40093769F /* kekaback.png in Resources */,
 				46CBE0111AB750E60093769F /* Icon-40@3x.png in Resources */,
 				46CBE01E1AB750E60093769F /* Icon.png in Resources */,
 				46CBE0131AB750E60093769F /* Icon-60@3x.png in Resources */,
 				46CBE0161AB750E60093769F /* Icon-Small.png in Resources */,
+				46CBE0241AB767D10093769F /* FOT-MatissePro-EB.otf in Resources */,
 				46CBE0141AB750E60093769F /* Icon-76.png in Resources */,
 				46CBE01F1AB750E60093769F /* Icon@2x.png in Resources */,
 				46CBE00F1AB750E60093769F /* Icon-40.png in Resources */,
@@ -428,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -464,7 +488,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -15,6 +15,9 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
     
     var onoff : Bool = false
     
+    //フォントを FOT-MatissePro-EB.otf
+    
+    
     @IBOutlet var timerLabel : UILabel!
     @IBOutlet var btn : UIButton!
     
@@ -43,8 +46,8 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
         
 
         
-    
-        
+    timerLabel.font = UIFont(name: "MatissePro-EB", size: 80)
+        //フォント名は Postscript名じゃないといけないみたい！！
     }
     
     
@@ -116,9 +119,12 @@ class ViewController: UIViewController ,GADBannerViewDelegate{
             cnt += 0.00001
             
             //桁数を指定して文字列を作る.
-            let str = "Time:".stringByAppendingFormat("%.2f",cnt*10)
+            let str = "".stringByAppendingFormat("%.2f",cnt*10)
+            
             
             timerLabel.text = str
+            
+            
         }else{
             
         }
