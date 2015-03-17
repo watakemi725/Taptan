@@ -9,7 +9,13 @@
 import UIKit
 
 
+
 class ViewController: UIViewController ,GADBannerViewDelegate{
+    
+    override func viewDidAppear(animated: Bool) {
+        cnt = 0
+        timerLabel.text = "PUSH"
+    }
     
     var cnt : Float = 0
     

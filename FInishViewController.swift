@@ -17,6 +17,7 @@ class FInishViewController : UIViewController,GADBannerViewDelegate {
     var myComposeView : SLComposeViewController!
 
     var score : Float!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
