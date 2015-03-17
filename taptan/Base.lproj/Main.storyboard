@@ -96,10 +96,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back" destination="5Eq-Yr-hwE" eventType="touchUpInside" id="Tc4-I7-rwk"/>
                                     <action selector="theTouchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="DCH-NX-8GP"/>
                                     <action selector="theTouchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RP5-9H-nm0"/>
                                     <action selector="theTouchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="UlR-9V-zH1"/>
+                                    <action selector="tweet" destination="5Eq-Yr-hwE" eventType="touchUpInside" id="Cj5-ew-htJ"/>
                                 </connections>
                             </button>
                         </subviews>

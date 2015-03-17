@@ -8,16 +8,22 @@
 
 import UIKit
 
+import Social
+
 class FInishViewController : UIViewController,GADBannerViewDelegate {
 
     @IBOutlet var label : UILabel!
+    
+    var myComposeView : SLComposeViewController!
 
+    var score : Float!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         var appDelegate : AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
-        var score = appDelegate.score
+        score = appDelegate.score
+        
         
         
         let str = "".stringByAppendingFormat("%.2f",score!*10)
@@ -28,6 +34,9 @@ class FInishViewController : UIViewController,GADBannerViewDelegate {
         println(str)
         
         // Do any additional setup after loading the view.
+        //admob関係
+        let bannerView:GADBannerView = getAdBannerView()
+        self.view.addSubview(bannerView)
         
         
     }
@@ -58,6 +67,42 @@ class FInishViewController : UIViewController,GADBannerViewDelegate {
     @IBAction func back(){
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func tweet(){
+        
+        let layer = UIApplication.sharedApplication().keyWindow?.layer
+        
+        let scale = UIScreen.mainScreen().scale;
+        UIGraphicsBeginImageContextWithOptions(layer!.frame.size, false, scale)
+        
+        layer!.renderInContext(UIGraphicsGetCurrentContext())
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+//        UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil);
+        
+        // SLComposeViewControllerのインスタンス化.
+        // ServiceTypeをTwitterに指定.
+        myComposeView = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        
+        var str1 : String = "I have".stringByAppendingFormat("%.2f",score!*10)
+        var str2 : String = "秒 我慢ed"
+        
+        
+        // 投稿するテキストを指定.
+        myComposeView.setInitialText(str1+str2)
+        
+        
+        // 投稿する画像を指定.
+        myComposeView.addImage(screenshot) //(UIImage(named: "oouchi.jpg"))
+        
+        // myComposeViewの画面遷移.
+        self.presentViewController(myComposeView, animated: true, completion: nil)
+    
+    
+        
+    }
+    
 
     /*
     // MARK: - Navigation
