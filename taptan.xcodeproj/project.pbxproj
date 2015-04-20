@@ -48,6 +48,7 @@
 		46E8A6BD1A9B217A00BE219D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E8A6BC1A9B217A00BE219D /* Images.xcassets */; };
 		46E8A6C01A9B217A00BE219D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E8A6BE1A9B217A00BE219D /* LaunchScreen.xib */; };
 		46E8A6CC1A9B217A00BE219D /* taptanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E8A6CB1A9B217A00BE219D /* taptanTests.swift */; };
+		46F6F3121AE577430079AEC7 /* Main3.5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F6F3111AE577430079AEC7 /* Main3.5.storyboard */; };
 		46FF3D221AA99A0B001759B4 /* FInishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FF3D211AA99A0B001759B4 /* FInishViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		46E8A6C51A9B217A00BE219D /* taptanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taptanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E8A6CA1A9B217A00BE219D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E8A6CB1A9B217A00BE219D /* taptanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taptanTests.swift; sourceTree = "<group>"; };
+		46F6F3111AE577430079AEC7 /* Main3.5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main3.5.storyboard; sourceTree = "<group>"; };
 		46FF3D1E1AA98D89001759B4 /* AdmobBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdmobBridge.h; sourceTree = "<group>"; };
 		46FF3D211AA99A0B001759B4 /* FInishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FInishViewController.swift; path = ../FInishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,6 +218,7 @@
 				46E8A6B71A9B217A00BE219D /* ViewController.swift */,
 				46FF3D211AA99A0B001759B4 /* FInishViewController.swift */,
 				46E8A6B91A9B217A00BE219D /* Main.storyboard */,
+				46F6F3111AE577430079AEC7 /* Main3.5.storyboard */,
 				46E8A6BC1A9B217A00BE219D /* Images.xcassets */,
 				46E8A6BE1A9B217A00BE219D /* LaunchScreen.xib */,
 				46E8A6B31A9B217A00BE219D /* Supporting Files */,
@@ -338,6 +341,7 @@
 				46CBE01C1AB750E60093769F /* Icon-Small-50.png in Resources */,
 				46CBE0101AB750E60093769F /* Icon-40@2x.png in Resources */,
 				46CBE00E1AB750E60093769F /* Contents.json in Resources */,
+				46F6F3121AE577430079AEC7 /* Main3.5.storyboard in Resources */,
 				46CBE02C1AB76EF40093769F /* more.png in Resources */,
 				46CBE01B1AB750E60093769F /* Icon-72@2x.png in Resources */,
 				46CBE0191AB750E60093769F /* Icon-60.png in Resources */,
@@ -500,6 +504,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -508,6 +514,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AdmobBridge.h";
 			};
 			name = Debug;
@@ -517,6 +524,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -525,6 +534,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-Objc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/AdmobBridge.h";
 			};
 			name = Release;

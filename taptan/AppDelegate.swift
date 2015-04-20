@@ -14,20 +14,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var score : Float?
 
     var window: UIWindow?
+    
+    
+    
+    func grabStoryboard() -> UIStoryboard {
+        var storyboard = UIStoryboard()
+        var height = UIScreen.mainScreen().bounds.size.height
+        
+        if height == 480 {
+            storyboard = UIStoryboard(name: "Main3.5", bundle: nil)
+        } else {
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+        }
+        return storyboard
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        var storyboard: UIStoryboard = self.grabStoryboard()
+        
+//        self.window?.rootViewController =
+//            storyboard.instantiateInitialViewController() as? UIViewController
+        if let window = window { window.rootViewController = storyboard.instantiateInitialViewController() as? UIViewController }
+        self.window?.makeKeyAndVisible()
+        
 
+        /*
         
+        let rect:CGRect = UIScreen.mainScreen().bounds
+        if (rect.size.height == 480){
+            
+//            let storyboard = UIStoryboard(name: "threepointfive", bundle: nil)
+////            let vc = storyboard.instantiateViewControllerWithIdentifier("myVCID") as UIViewController
+//            let root: AnyObject = storyboard.instantiateViewControllerWithIdentifier("iPhone5") as UIViewController
+////            self.window?.rootViewController = root as? UIViewController
+//            self.window!.rootViewController = root as? UIViewController
+            
+            var mainView: UIStoryboard!
+            mainView = UIStoryboard(name: "vcLogin", bundle: nil)
+            let viewcontroller : UIViewController = mainView.instantiateViewControllerWithIdentifier("iPhone4") as UIViewController
+            self.window!.rootViewController = viewcontroller
+        }
         
-        
-        
-        
+        */
         
         return true
     }
+    
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
