@@ -4,11 +4,17 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FOT-MatissePro-EB.otf">
+            <string>MatissePro-EB</string>
+            <string>MatissePro-EB</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="pjR-u3-cah">
             <objects>
-                <viewController id="8wv-jB-7bu" sceneMemberID="viewController">
+                <viewController id="8wv-jB-7bu" customClass="ViewController" customModule="taptan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mHk-Gg-BJO"/>
                         <viewControllerLayoutGuide type="bottom" id="jDO-Gp-KQr"/>
@@ -16,13 +22,99 @@
                     <view key="view" contentMode="scaleToFill" id="8kQ-oD-8wd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PUSH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-RR-LeG">
+                                <rect key="frame" x="0.0" y="28" width="320" height="142"/>
+                                <fontDescription key="fontDescription" name="MatissePro-EB" family="FOT-Matisse Pro" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT7-Xb-6SD">
+                                <rect key="frame" x="85" y="178" width="150" height="150"/>
+                                <state key="normal" title="Button" image="defbtn.png">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" image="pushbtn.png"/>
+                                <state key="highlighted" image="pushbtn.png"/>
+                                <connections>
+                                    <action selector="theTouchDown:" destination="8wv-jB-7bu" eventType="touchDown" id="bju-xE-eeu"/>
+                                    <action selector="theTouchUpInside:" destination="8wv-jB-7bu" eventType="touchUpInside" id="R02-8A-nJu"/>
+                                    <action selector="theTouchUpOutside:" destination="8wv-jB-7bu" eventType="touchUpOutside" id="fvO-lj-qjh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="btn" destination="zT7-Xb-6SD" id="pj2-ti-qE2"/>
+                        <outlet property="timerLabel" destination="b2U-RR-LeG" id="FlS-f4-ayf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nb1-Ig-OBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="97"/>
+            <point key="canvasLocation" x="292" y="45"/>
+        </scene>
+        <!--Inish View Controller-->
+        <scene sceneID="7nO-CZ-KzS">
+            <objects>
+                <viewController storyboardIdentifier="finish" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3nD-hk-Dxi" customClass="FInishViewController" customModule="taptan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="loW-zE-Sy5"/>
+                        <viewControllerLayoutGuide type="bottom" id="I6v-3J-Mff"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4p-NF-UYL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kekaback.png" translatesAutoresizingMaskIntoConstraints="NO" id="wue-ox-UOb">
+                                <rect key="frame" x="16" y="12" width="288" height="498"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOq-28-8LE">
+                                <rect key="frame" x="-68" y="34" width="456" height="143"/>
+                                <fontDescription key="fontDescription" name="MatissePro-EB" family="FOT-Matisse Pro" pointSize="66"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPn-tp-hb8">
+                                <rect key="frame" x="164" y="382" width="140" height="45"/>
+                                <state key="normal" title="back" image="more.png">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back" destination="3nD-hk-Dxi" eventType="touchUpInside" id="ygU-qW-hHw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHi-5W-eAe">
+                                <rect key="frame" x="16" y="382" width="140" height="45"/>
+                                <state key="normal" title="tweet" image="tweet.png">
+                                    <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweet" destination="3nD-hk-Dxi" eventType="touchUpInside" id="JwA-8o-SEY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="FOq-28-8LE" id="eV1-uq-xyu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6WZ-aQ-PUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="45"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defbtn.png" width="1550" height="1550"/>
+        <image name="kekaback.png" width="2667" height="4733"/>
+        <image name="more.png" width="1291" height="412"/>
+        <image name="pushbtn.png" width="1550" height="1550"/>
+        <image name="tweet.png" width="1291" height="412"/>
+    </resources>
 </document>
